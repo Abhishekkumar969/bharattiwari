@@ -106,3 +106,16 @@
   background-color: #ffb703;
   color: #023047;
 }
+
+@media (max-width: 480px) {
+  .modalContent {
+    padding: 1.5rem 1rem;
+  }
+  .modalTitle {
+    font-size: 1.25rem;
+  }
+  .closeBtn {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}

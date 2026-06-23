@@ -1,6 +1,6 @@
 export const bho = {
   navbar: {
-    title: "भारत भूषण तिवारी",
+    title: "भरत भूषण तिवारी",
     subtitle: "न्याय दऽ, बिहार बदलऽ",
     home: "होम",
     about: "भरत तिवारी के रहन?",

@@ -306,3 +306,29 @@
     width: calc(50% - 0.5rem);
   }
 }
+
+@media (max-width: 480px) {
+  .preTitle { font-size: 1.5rem; }
+  .mainTitle { font-size: 2.2rem; }
+  .subtitle { font-size: 0.95rem; margin-bottom: 1rem; }
+  
+  .btn {
+    padding: 0.6rem 0.3rem;
+    font-size: 0.75rem;
+  }
+  
+  .statTitle { font-size: 0.85rem; }
+  .statSub { font-size: 0.65rem; }
+  .statIconWrapper svg { width: 24px; height: 24px; }
+}
+
+@media (max-width: 380px) {
+  .preTitle { font-size: 1.2rem; }
+  .mainTitle { font-size: 1.8rem; }
+  .subtitle { font-size: 0.85rem; }
+  .btn { font-size: 0.65rem; }
+  .statTitle { font-size: 0.75rem; }
+  .statSub { font-size: 0.55rem; }
+  .actionButtons { gap: 0.25rem; }
+  .statsRow { gap: 0.5rem; padding: 0.5rem; }
+}

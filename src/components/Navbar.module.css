@@ -113,3 +113,19 @@
     font-size: 0.85rem;
   }
 }
+
+@media (max-width: 480px) {
+  .logoCircle { width: 40px; height: 40px; }
+  .logoText h1 { font-size: 0.85rem; }
+  .logoText p { font-size: 0.6rem; }
+  .ctaButton { padding: 0.4rem 0.8rem; font-size: 0.75rem; }
+  .navbar { padding: 0.8rem 1%; }
+  .logoContainer { gap: 0.5rem; }
+}
+
+@media (max-width: 380px) {
+  .logoCircle { width: 32px; height: 32px; }
+  .logoText h1 { font-size: 0.75rem; }
+  .logoText p { font-size: 0.55rem; }
+  .ctaButton { padding: 0.4rem 0.6rem; font-size: 0.7rem; }
+}
