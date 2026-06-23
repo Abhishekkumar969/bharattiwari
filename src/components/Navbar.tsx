@@ -1,8 +1,16 @@
+"use client";
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.css';
 import Image from 'next/image';
+import SupportButton from './SupportButton';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Navbar() {
+  const { t } = useLanguage();
+  const pathname = usePathname();
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoContainer}>
@@ -17,19 +25,20 @@ export default function Navbar() {
           />
         </div>
         <div className={styles.logoText}>
-          <h1>भारत भूषण तिवारी</h1>
-          <p>न्याय दो, बिहार बदलो</p>
+          <h1>{t('navbar.title')}</h1>
+          <p>{t('navbar.subtitle')}</p>
         </div>
       </div>
 
       <div className={styles.navLinks}>
-        <Link href="/" className={styles.active}>होम</Link>
-        <Link href="/about">भारत तिवारी कौन थे?</Link>
-        <Link href="/demands">हमारी माँगें</Link>
+        <Link href="/" className={pathname === "/" ? styles.active : ""}>{t('navbar.home')}</Link>
+        <Link href="/about" className={pathname === "/about" ? styles.active : ""}>{t('navbar.about')}</Link>
+        <Link href="/demands" className={pathname === "/demands" ? styles.active : ""}>{t('navbar.demands')}</Link>
       </div>
 
-      <div className={styles.ctaContainer}>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvdDkTGyspByYYDx7ovWdH7_maFl466SMKxXnx0mAff-YEXQ/viewform" target="_blank" rel="noopener noreferrer" className={styles.ctaButton} style={{ textDecoration: 'none' }}>जन समर्थन दें</a>
+      <div className={styles.ctaContainer} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <LanguageSwitcher />
+        <SupportButton className={styles.ctaButton} style={{ textDecoration: 'none' }}>{t('navbar.support')}</SupportButton>
       </div>
     </nav>
   );

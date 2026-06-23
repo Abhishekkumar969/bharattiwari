@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import styles from './DetailedDemand.module.css';
+import { useLanguage } from '../context/LanguageContext';
 const HomeIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -80,7 +81,20 @@ const cardsData = [
 ];
 
 export default function DetailedDemand() {
+  const { t } = useLanguage();
   const [expandedCards, setExpandedCards] = useState<number[]>([]);
+
+  const cardsData = Array.from({ length: 4 }).map((_, i) => ({
+    icon: [HomeIcon, WavesIcon, SearchIcon, ShieldCheckIcon][i],
+    iconClass: [styles.iconDarkBlue, styles.iconTeal, styles.iconPurple, styles.iconOrange][i],
+    title: t(`detailedDemand.c${i + 1}.title`),
+    items: [
+      t(`detailedDemand.c${i + 1}.i1`),
+      t(`detailedDemand.c${i + 1}.i2`),
+      t(`detailedDemand.c${i + 1}.i3`),
+      t(`detailedDemand.c${i + 1}.i4`),
+    ]
+  }));
 
   const toggleCard = (index: number) => {
     setExpandedCards(prev => 
@@ -93,7 +107,7 @@ export default function DetailedDemand() {
   return (
     <section className={styles.detailedDemand}>
       <div className={styles.container}>
-        <h2 className={styles.title}>10. पुनर्वास और आपदा राहत की संवैधानिक गारंटी – विस्तार से</h2>
+        <h2 className={styles.title}>{t('detailedDemand.title')}</h2>
         
         <div className={styles.grid}>
           {cardsData.map((card, index) => {

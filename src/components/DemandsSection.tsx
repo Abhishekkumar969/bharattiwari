@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import styles from './DemandsSection.module.css';
+import { useLanguage } from '../context/LanguageContext';
 const SchoolIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="28" height="28">
     <path d="M12 2L2 7v14h20V7L12 2z" />
@@ -160,7 +161,20 @@ const demands = [
 ];
 
 export default function DemandsSection() {
+  const { t } = useLanguage();
   const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
+
+  // Dynamically load demands from translations to avoid keeping an outdated static array
+  const demandsData = Array.from({ length: 11 }).map((_, i) => ({
+    icon: [
+      <SchoolIcon key={0} />, <HospitalIcon key={1} />, <RoadIcon key={2} />,
+      <WarningIcon key={3} />, <BriefcaseIcon key={4} />, <PoliceIcon key={5} />,
+      <PlantIcon key={6} />, <DocSearchIcon key={7} />, <WomenIcon key={8} />,
+      <HouseFloodIcon key={9} />, <ThreePeopleIcon key={10} />
+    ][i],
+    title: t(`demands.d${i + 1}.title`),
+    description: t(`demands.d${i + 1}.desc`)
+  }));
 
   const toggleExpand = (index: number) => {
     setExpandedIndices(prev =>
@@ -171,15 +185,15 @@ export default function DemandsSection() {
   };
 
   return (
-    <section className={styles.demandsSection}>
+    <section className={styles.demandsSection} id="demands">
       <div className={styles.header}>
         <div className={styles.line}></div>
-        <h2 className={styles.title}>हमारी 11 प्रमुख माँगें – एक बेहतर बिहार के लिए</h2>
+        <h2 className={styles.title}>{t('demands.title')}</h2>
         <div className={styles.line}></div>
       </div>
 
       <div className={styles.grid}>
-        {demands.map((demand, index) => {
+        {demandsData.map((demand, index) => {
           const isExpanded = expandedIndices.includes(index);
 
           if (index === 9) {
@@ -196,7 +210,7 @@ export default function DemandsSection() {
                 </div>
                 <div className={styles.expandWrapper}>
                   <button className={styles.expandBtn} onClick={() => toggleExpand(index)}>
-                    मुख्य माँगें (विस्तार से)  <ChevronDown size={16} />
+                    {t('demands.expand')}  <ChevronDown size={16} />
                   </button>
                 </div>
               </div>

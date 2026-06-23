@@ -1,5 +1,9 @@
+"use client";
+
 import styles from './HeroSection.module.css';
 import Image from 'next/image';
+import SupportButton from './SupportButton';
+import { useLanguage } from '../context/LanguageContext';
 
 const FistIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -30,6 +34,7 @@ const JusticeIcon = () => (
 );
 
 export default function HeroSection() {
+  const { t } = useLanguage();
   return (
     <section className={styles.heroSection}>
       <div className={styles.container}>
@@ -45,62 +50,61 @@ export default function HeroSection() {
             <div className={styles.imageOverlayGradient}></div>
           </div>
           <div className={styles.quoteBox}>
-            <p className={styles.quoteText}>"क्रांति की तलवार विचारों की शान पर तेज होती है।"</p>
-            <p className={styles.quoteAuthor}>- भगत सिंह</p>
+            <p className={styles.quoteText}>{t('hero.quote')}</p>
+            <p className={styles.quoteAuthor}>{t('hero.author')}</p>
           </div>
         </div>
 
         <div className={styles.rightContent}>
-          <h2 className={styles.preTitle}>न्याय दो,</h2>
-          <h1 className={styles.mainTitle}>बिहार बदलो!</h1>
+          <h2 className={styles.preTitle}>{t('hero.preTitle')}</h2>
+          <h1 className={styles.mainTitle}>{t('hero.mainTitle')}</h1>
           <p className={styles.subtitle}>
-            अन्याय के खिलाफ आवाज़ उठाएं, व्यवस्था बदलें,<br />
-            ताकि किसी और भारत तिवारी को हथियार न उठाना पड़े।
+            {t('hero.subtitle')}
           </p>
 
           <div className={styles.actionButtons}>
             <button className={`${styles.btn} ${styles.btnPrimary}`}>
-              <FistIcon /> हमारी माँगें पढ़ें
+              <FistIcon /> {t('hero.readDemands')}
             </button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvdDkTGyspByYYDx7ovWdH7_maFl466SMKxXnx0mAff-YEXQ/viewform" target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btnSecondary}`} style={{ textDecoration: 'none' }}>
-              <DocIcon /> जन समर्थन दें
-            </a>
+            <SupportButton className={`${styles.btn} ${styles.btnSecondary}`} style={{ textDecoration: 'none' }}>
+              <DocIcon /> {t('hero.support')}
+            </SupportButton>
           </div>
 
           <div className={styles.statsRow}>
             <div className={styles.statItem}>
               <div className={styles.statIconWrapper}><EduIcon /></div>
               <div>
-                <p className={styles.statTitle}>शिक्षा</p>
-                <p className={styles.statSub}>हर बच्चे का अधिकार</p>
+                <p className={styles.statTitle}>{t('hero.education')}</p>
+                <p className={styles.statSub}>{t('hero.eduSub')}</p>
               </div>
             </div>
             <div className={styles.statItem}>
               <div className={styles.statIconWrapper}><HealthIcon /></div>
               <div>
-                <p className={styles.statTitle}>स्वास्थ्य</p>
-                <p className={styles.statSub}>हर नागरिक का अधिकार</p>
+                <p className={styles.statTitle}>{t('hero.health')}</p>
+                <p className={styles.statSub}>{t('hero.healthSub')}</p>
               </div>
             </div>
             <div className={styles.statItem}>
               <div className={styles.statIconWrapper}><ShieldIcon /></div>
               <div>
-                <p className={styles.statTitle}>सुरक्षा</p>
-                <p className={styles.statSub}>हर महिला का अधिकार</p>
+                <p className={styles.statTitle}>{t('hero.security')}</p>
+                <p className={styles.statSub}>{t('hero.secSub')}</p>
               </div>
             </div>
             <div className={styles.statItem}>
               <div className={styles.statIconWrapper}><RespectIcon /></div>
               <div>
-                <p className={styles.statTitle}>सम्मान</p>
-                <p className={styles.statSub}>हर इंसान का अधिकार</p>
+                <p className={styles.statTitle}>{t('hero.respect')}</p>
+                <p className={styles.statSub}>{t('hero.respectSub')}</p>
               </div>
             </div>
             <div className={styles.statItem}>
               <div className={styles.statIconWrapper}><JusticeIcon /></div>
               <div>
-                <p className={styles.statTitle}>न्याय</p>
-                <p className={styles.statSub}>हर पीड़ित का अधिकार</p>
+                <p className={styles.statTitle}>{t('hero.justice')}</p>
+                <p className={styles.statSub}>{t('hero.justiceSub')}</p>
               </div>
             </div>
           </div>

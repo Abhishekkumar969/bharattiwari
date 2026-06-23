@@ -1,5 +1,8 @@
+"use client";
+
 import styles from './FooterStats.module.css';
 import { Users, MapPin, Building2, Map } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const FacebookIcon = () => (
   <svg viewBox="0 0 24 24" width="24" height="24">
@@ -81,6 +84,7 @@ const NetworkSVG = () => (
 );
 
 export default function FooterStats() {
+  const { t } = useLanguage();
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -89,15 +93,15 @@ export default function FooterStats() {
             <UsersSVG />
             <div className={styles.statInfo}>
               <p className={styles.statNumber}>1,25,783+</p>
-              <p className={styles.statLabel}>लोगों ने समर्थन दिया</p>
+              <p className={styles.statLabel}>{t('footer.stat1')}</p>
             </div>
           </div>
-          
+
           <div className={styles.statItem}>
             <VillageSVG />
             <div className={styles.statInfo}>
               <p className={styles.statNumber}>356+</p>
-              <p className={styles.statLabel}>गाँवों से जुड़ाव</p>
+              <p className={styles.statLabel}>{t('footer.stat2')}</p>
             </div>
           </div>
 
@@ -105,7 +109,7 @@ export default function FooterStats() {
             <ScaleSVG />
             <div className={styles.statInfo}>
               <p className={styles.statNumber}>50+</p>
-              <p className={styles.statLabel}>संगठन जुड़े</p>
+              <p className={styles.statLabel}>{t('footer.stat3')}</p>
             </div>
           </div>
 
@@ -113,18 +117,17 @@ export default function FooterStats() {
             <NetworkSVG />
             <div className={styles.statInfo}>
               <p className={styles.statNumber}>25+</p>
-              <p className={styles.statLabel}>जिलों में अभियान</p>
+              <p className={styles.statLabel}>{t('footer.stat4')}</p>
             </div>
           </div>
         </div>
-        
+
         <div className={styles.socialMedia}>
-          <p className={styles.socialLabel}>हमें सोशल मीडिया पर फॉलो करें</p>
+          <p className={styles.socialLabel}>{t('footer.social')}</p>
           <div className={styles.socialIcons}>
-            <a href="#" className={styles.socialIcon}><FacebookIcon /></a>
-            <a href="#" className={styles.socialIcon}><TwitterIcon /></a>
-            <a href="#" className={styles.socialIcon}><InstagramIcon /></a>
-            <a href="#" className={styles.socialIcon}><YouTubeIcon /></a>
+            <a href="https://www.instagram.com/justiceforbharatbhushantiwari/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              <InstagramIcon />
+            </a>
           </div>
         </div>
       </div>
