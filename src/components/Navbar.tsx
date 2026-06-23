@@ -18,8 +18,8 @@ export default function Navbar() {
           <Image 
             src="/images/bharattiwarijustice.png" 
             alt="Bharat Tiwari Logo" 
-            width={50} 
-            height={50} 
+            width={75} 
+            height={75} 
             className={styles.logoImage} 
             style={{ borderRadius: '50%', objectFit: 'cover' }}
           />

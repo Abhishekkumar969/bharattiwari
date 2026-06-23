@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999;
   padding: 1rem;
 }
 
@@ -27,17 +27,25 @@
 .closeBtn {
   position: absolute;
   top: 1rem;
-  right: 1.5rem;
-  background: none;
+  right: 1rem;
+  background-color: #ef4444;
+  color: white;
   border: none;
-  font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  color: #666;
-  transition: color 0.2s;
+  transition: background-color 0.2s;
+  padding: 0;
 }
 
 .closeBtn:hover {
-  color: #000;
+  background-color: #dc2626;
+  color: white;
 }
 
 .modalTitle {
@@ -63,6 +71,8 @@
   font-weight: 500;
   color: #444;
   font-size: 0.95rem;
+  text-align: left;
+  display: block;
 }
 
 .required {

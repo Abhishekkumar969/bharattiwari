@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import styles from './SupportModal.module.css';
@@ -15,6 +16,12 @@ interface SupportButtonProps {
 export default function SupportButton({ className, style, children }: SupportButtonProps) {
   const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const [formData, setFormData] = useState({
     fullName: '',
     mobileNumber: '',
@@ -67,9 +74,9 @@ export default function SupportButton({ className, style, children }: SupportBut
         style={style}
       >
         {children}
-      </button>
+        </button>
 
-      {isOpen && (
+      {isOpen && mounted && document.body && createPortal(
         <div className={styles.modalOverlay} onClick={() => setIsOpen(false)}>
           <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
             <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>×</button>
@@ -119,13 +126,12 @@ export default function SupportButton({ className, style, children }: SupportBut
               </div>
 
               <div className={styles.formGroup}>
-                <label htmlFor="occupation">{t('form.occupation')} <span className={styles.required}>*</span></label>
+                <label htmlFor="occupation">{t('form.occupation')}</label>
                 <input 
                   type="text" 
                   id="occupation" 
                   name="occupation"
                   placeholder={t('form.placeholder')}
-                  required 
                   className={styles.input}
                   value={formData.occupation}
                   onChange={handleChange}
@@ -149,7 +155,8 @@ export default function SupportButton({ className, style, children }: SupportBut
               </button>
             </form>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );

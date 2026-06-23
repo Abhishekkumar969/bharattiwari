@@ -83,6 +83,10 @@
   background-color: #1e40af;
 }
 
+.iconPink {
+  background-color: #ec4899;
+}
+
 .iconTeal {
   background-color: #14b8a6;
 }
@@ -251,18 +255,12 @@
   .highlightedCard {
     grid-column: span 2;
   }
+}
 
-  .orderCard9 {
-    order: 1;
-  }
-
-  .orderCard11 {
-    order: 2;
-  }
-
-  .orderCard10 {
-    order: 3;
-  }
+@media (min-width: 1201px) {
+  .orderEarly { order: 1; }
+  .orderMiddle { order: 2; }
+  .orderLate { order: 3; }
 }
 
 @media (max-width: 768px) {
@@ -288,4 +286,16 @@
     align-items: center;
     text-align: center;
   }
+}
+.cardDesc ul, .highlightedDesc ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.cardDesc li, .highlightedDesc li {
+  margin-bottom: 0.5rem;
+}
+
+.cardDesc li:last-child, .highlightedDesc li:last-child {
+  margin-bottom: 0;
 }

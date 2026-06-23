@@ -47,55 +47,55 @@ export const hin = {
     }
   },
   demands: {
-    title: "Hamari 11 Pramukh Maangein – Ek Behtar Bihar Ke Liye",
-    expand: "Mukhya Maangein (Vistar se)",
+    title: "हमारी 12 प्रमुख माँगें",
+    expand: "मुख्य माँगें (विस्तार से)",
     d1: {
-      title: "Har Panchayat/Prakhand Mein Gunwattapurna Sarkari School",
-      desc: "Sabhi bachchon ko achhi shiksha, yogya shikshak, pustakalay, khel aur digital suvidhayein uplabdh hon."
+      title: "शहीद भरत भूषण तिवारी के हत्यारों को फाँसी की सजा दो।",
+      desc: "<ul> <li> मामले की सुनवाई फास्ट ट्रैक कोर्ट में कराई जाए ताकि पीड़ित परिवार को समय पर न्याय मिल सके </li> <li> फर्जी एनकाउंटर में शामिल प्रत्येक दोषी की पहचान की जाए। उनकी व्यक्तिगत एवं प्रशासनिक जिम्मेदारी तय की जाए। </li> <li> शहीद भरत तिवारी को आधिकारिक रूप से शहीद का दर्जा प्रदान किया जाए, ताकि आने वाली पीढ़ियाँ उनके साहस, बलिदान और न्याय के प्रति समर्पण से प्रेरणा प्राप्त कर सकें। </li> <li> न्याय में देरी, न्याय से वंचित करने के समान है। </li> </ul>  "
     },
     d2: {
-      title: "Pratyek Prakhand Mein Aadhunik Sarkari Aspatal",
-      desc: "Visheshagya doctor, dawaiyan, jaanch suvidha aur 24x7 aapatkalin sewayein sunishchit ki jayein."
+      title: "पुलिस सुधार एवं मानवाधिकारों का सम्मान",
+      desc: "<ul> <li> सभी पुलिस अधिकारियों और कर्मियों के लिए Empathy Training (संवेदनशीलता प्रशिक्षण) अनिवार्य किया जाए, ताकि वे नागरिकों के साथ सम्मानजनक और मानवीय व्यवहार कर सकें।</li> <li>Police Morale, Ethics और Constitutional Values पर नियमित प्रशिक्षण अनिवार्य हो, जिससे सेवा, कर्तव्य और जनविश्वास की भावना मजबूत हो। </li> <li>पुलिस का धर्म सेवा है, भय नहीं; विश्वास है, अत्याचार नहीं। </li> </ul> "
     },
     d3: {
-      title: "Har Gaon Tak Sadak, Bijli, Paani aur Internet",
-      desc: "Moolbhoot suvidhayein har nagrik tak pahuchein, taki sabhi ko vikas ka saman avsar mile."
+      title: "सूचना का अधिकार, पारदर्शिता और जनता के हर पैसे का हिसाब",
+      desc: "<ul> <li> जनता के हर एक पैसे का जवाब दो। </li> <li> गाँव, पंचायत और प्रखंड स्तर तक खर्च की जानकारी सार्वजनिक हो। </li> <li>एक आम नागरिक भी आसानी से समझ सके कि उसके क्षेत्र के लिए कितना पैसा आया और कहाँ खर्च हुआ। </li> <li>प्रत्येक पंचायत और प्रखंड के लिए सार्वजनिक 'जनता डैशबोर्ड' बनाया जाए। </li> <li>सभी विकास कार्यों, टेंडर, भुगतान और प्रगति की जानकारी सरल भाषा में उपलब्ध हो।</li> <li>इतनी स्पष्ट, सरल और समय पर जानकारी उपलब्ध कराई जाए कि नागरिकों को RTI दाखिल करने की आवश्यकता ही न पड़े।  </li> <li>सरकारी कार्यालयों, पंचायत भवनों और वेबसाइटों पर सभी योजनाओं का विवरण नियमित रूप से प्रदर्शित किया जाए। </li> <li>सामाजिक अंकेक्षण (Social Audit) अनिवार्य किया जाए।</li> <li> भ्रष्टाचार और धन के दुरुपयोग पर त्वरित कार्रवाई हो। </li> <li>इतनी पारदर्शिता हो कि RTI की आवश्यकता ही न पड़े। </li> </ul> "
     },
     d4: {
-      title: "Bhrashtachar Mukt Aur Jawabdeh Shasan",
-      desc: "Sarkari kaamkaaj mein pardarshita, adhikariyon ki jawabdehi tay ho aur bhrashtachar par sakht karyawahi ho."
+      title: "हर पंचायत / प्रखंड में गुणवत्तापूर्ण सरकारी स्कूल",
+      desc: "<ul> <li>हर पंचायत में आधुनिक सरकारी विद्यालय।</li> <li> योग्य शिक्षकों की नियमित नियुक्ति। </li> <li>डिजिटल शिक्षा और पुस्तकालय की सुविधा। </li>  <li>गरीब बच्चों के लिए समान शिक्षा का अधिकार।</li> <li>खेल, विज्ञान और तकनीकी शिक्षा को बढ़ावा। </li></ul> "
     },
     d5: {
-      title: "Yuvaon Ke Liye Rozgar Aur Kaushal Vikas",
-      desc: "Sthaniya star par rozgar ke avsar, startups ko badhava aur kaushal vikas kendra sthapit kiye jayein."
+      title: "प्रत्येक प्रखंड में आधुनिक सरकारी अस्पताल",
+      desc: "<ul> <li>विशेषज्ञ डॉक्टरों की उपलब्धता।</li> <li>24×7 इमरजेंसी सेवा। </li> <li>सस्ती एवं निःशुल्क दवाइयाँ। </li>  <li>मातृ एवं शिशु स्वास्थ्य सुविधाएँ।</li> <li>आधुनिक जांच उपकरण और एम्बुलेंस सेवा। </li> </ul> "
     },
     d6: {
-      title: "Police Sudhaar Aur Manavadhikaron Ka Samman",
-      desc: "Police vyavastha ko samvedansheel, pardarshi aur janta ke prati uttardayi banaya jaye, police atyachar par rok ho."
+      title: "हर गाँव तक सड़क, बिजली, पानी",
+      desc: "<ul> <li>सभी गाँवों को पक्की सड़क से जोड़ना।</li> <li> स्वच्छ पेयजल की उपलब्धता। </li> <li>निर्बाध बिजली आपूर्ति।  </li>  <li>इंटरनेट और डिजिटल सेवाओं का विस्तार।</li> <li>बुनियादी ढाँचे का समान विकास। </li> </ul> "
     },
     d7: {
-      title: "Kisanon Ke Liye Uchit Mulya Aur Sahayata",
-      desc: "Fasal ka uchit mulya, sinchai, beej, khaad aur sarkari sahayata samay par aur pardarshi tarike se mile."
+      title: "भ्रष्टाचार मुक्त और जवाबदेह शासन",
+      desc: "<ul> <li>भ्रष्टाचार के मामलों में त्वरित कार्रवाई।</li> <li>अधिकारियों की जवाबदेही तय हो। </li> <li>सरकारी कार्यों की समय सीमा तय हो। </li> <li>रिश्वतखोरी पर कठोर दंड। </li> <li>पारदर्शी प्रशासनिक व्यवस्था। </li> </ul> "
     },
     d8: {
-      title: "Soochna Ka Adhikar Aur Sarkari Pardarshita",
-      desc: "Har sarkari yojana, kharch aur nirnay ki jankari janta ke liye sulabh ho aur RTI ko prabhavi banaya jaye."
+      title: "युवाओं के लिए रोजगार और कौशल विकास",
+      desc: "<ul> <li>स्थानीय स्तर पर रोजगार के अवसर।</li> <li>कौशल विकास प्रशिक्षण केंद्र। </li> <li> उद्योग और निवेश को बढ़ावा। </li>   <li>स्वरोजगार के लिए सहायता। </li> <li> युवाओं के पलायन को रोकने की नीति। </li> </ul> "
     },
     d9: {
-      title: "Mahilaon Ki Suraksha Aur Samman",
-      desc: "Mahilaon ke khilaf apradhon par twarit karyawahi, surakshit sarvajanik sthaan, helpline aur fast track nyay vyavastha ho."
+      title: "किसानों के लिए उचित मूल्य और सहायता",
+      desc: "<ul> <li>फसल का उचित समर्थन मूल्य।</li> <li>सिंचाई और बीज की सुविधा। </li> <li>समय पर सरकारी सहायता। </li>  <li>प्राकृतिक आपदा में उचित मुआवजा।</li> <li>कृषि आधारित उद्योगों को बढ़ावा। </li> </ul> "
     },
     d10: {
-      title: "Punarvas Aur Aapda Rahat Ki Sanvaidhanik Guarantee",
-      desc: "Kisi ka ghar bina punarvas ke na toda jaye aur aapda (baadh) mein har prabhavit parivar ko garimapurna jeevan ki aavashyak suvidhayein milein."
+      title: "कमजोर वर्गों के अधिकार और सामाजिक न्याय",
+      desc: "<ul> <li>दलित, पिछड़े, आदिवासी, अल्पसंख्यक और सभी कमजोर वर्गों के अधिकारों की रक्षा।</li> <li>समान अवसर सुनिश्चित हो।</li> <li>सामाजिक भेदभाव के खिलाफ सख्त कार्रवाई।</li> </ul> "
     },
     d11: {
-      title: "Kamzor Vargon Ke Adhikar Aur Samajik Nyay",
-      desc: "Dalit, pichhade, adivasi, alpsankhyak aur sabhi kamzor vargon ke adhikaron ki raksha aur saman avsar sunishchit ho."
+      title: "पुनर्वास और आपदा राहत की संवैधानिक गारंटी",
+      desc: "किसी का घर बिना पुनर्वास के न तोड़ा जाए और आपदा (बाढ़) में हर प्रभावित परिवार को गरिमापूर्ण जीवन की आवश्यक सुविधाएँ मिलें।"
     }
   },
   detailedDemand: {
-    title: "10. Punarvas Aur Aapda Rahat Ki Sanvaidhanik Guarantee – Vistar se",
+    title: "Punarvas Aur Aapda Rahat Ki Sanvaidhanik Guarantee – Vistar se",
     c1: {
       title: "Pehle Punarvas, Phir Karyawahi",
       i1: "Kisi bhi nagrik ka ghar, dukaan, zameen bina punarvas ke nahi toda jaye.",

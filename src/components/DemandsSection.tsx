@@ -196,9 +196,18 @@ export default function DemandsSection() {
         {demandsData.map((demand, index) => {
           const isExpanded = expandedIndices.includes(index);
 
-          if (index === 9) {
+          let orderClass = '';
+          if (index === 10) {
+            orderClass = styles.orderMiddle; // order: 2
+          } else if (index === 9) {
+            orderClass = styles.orderLate;   // order: 3
+          } else {
+            orderClass = styles.orderEarly;  // order: 1 (0 to 8)
+          }
+
+          if (index === 10) {
             return (
-              <div key={index} className={`${styles.card} ${styles.highlightedCard} ${styles.orderCard10}`}>
+              <div key={index} className={`${styles.card} ${styles.highlightedCard} ${orderClass}`}>
                 <div className={styles.highlightedHeader}>
                   <div className={styles.highlightedIconWrapper}>
                     <div className={styles.iconCircle}>{demand.icon}</div>
@@ -206,7 +215,7 @@ export default function DemandsSection() {
                   <h3 className={styles.highlightedTitle}>{demand.title}</h3>
                 </div>
                 <div className={`${styles.hideOnMobile} ${isExpanded ? styles.showOnMobile : ''} ${styles.alwaysOpenDesktop} ${styles.highlightedBody}`}>
-                  <p className={styles.highlightedDesc}>{demand.description}</p>
+                  <div className={styles.highlightedDesc} dangerouslySetInnerHTML={{ __html: demand.description }} />
                 </div>
                 <div className={styles.expandWrapper}>
                   <button className={styles.expandBtn} onClick={() => toggleExpand(index)}>
@@ -221,14 +230,12 @@ export default function DemandsSection() {
           const colorClasses = [
             styles.iconGreen, styles.iconRed, styles.iconBlue, styles.iconOrange,
             styles.iconPurple, styles.iconIndigo, styles.iconGreen, styles.iconTeal,
-            styles.iconRed, '', styles.iconOrange
+            styles.iconRed, styles.iconPink, styles.iconOrange
           ];
 
-          const isCard9 = index === 8;
-          const isCard11 = index === 10;
-          const alwaysOpenDesktopClass = (isCard9 || isCard11) ? styles.alwaysOpenDesktop : '';
-          const hideChevronDesktopClass = (isCard9 || isCard11) ? styles.hideChevronDesktop : '';
-          const orderClass = isCard9 ? styles.orderCard9 : (isCard11 ? styles.orderCard11 : '');
+          const isAlwaysOpen = false; // We can adjust this if needed
+          const alwaysOpenDesktopClass = isAlwaysOpen ? styles.alwaysOpenDesktop : '';
+          const hideChevronDesktopClass = isAlwaysOpen ? styles.hideChevronDesktop : '';
 
           return (
             <div key={index} className={`${styles.card} ${orderClass}`}>
@@ -244,7 +251,7 @@ export default function DemandsSection() {
                 </div>
               </div>
               <div className={`${styles.cardBody} ${isExpanded ? styles.expanded : ''} ${alwaysOpenDesktopClass}`}>
-                <p className={styles.cardDesc}>{demand.description}</p>
+                <div className={styles.cardDesc} dangerouslySetInnerHTML={{ __html: demand.description }} />
               </div>
             </div>
           );

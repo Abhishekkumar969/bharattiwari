@@ -47,55 +47,55 @@ export const en = {
     }
   },
   demands: {
-    title: "Our 11 Main Demands – For a Better Bihar",
+    title: "Our 12 Main Demands",
     expand: "Main Demands (in detail)",
     d1: {
-      title: "Quality Government Schools in Every Panchayat/Block",
-      desc: "Good education, qualified teachers, libraries, sports, and digital facilities for all children."
+      title: "Death Penalty for the Killers of Martyr Bharat Bhushan Tiwari",
+      desc: "<ul> <li> Hearing of the case in a Fast Track Court so the victim's family gets timely justice. </li> <li> Identify every culprit involved in the fake encounter and fix their personal and administrative responsibility. </li> <li> Officially grant Martyr status to Bharat Tiwari so future generations can draw inspiration from his courage and sacrifice. </li> <li> Justice delayed is justice denied. </li> </ul>"
     },
     d2: {
-      title: "Modern Government Hospitals in Every Block",
-      desc: "Ensure specialized doctors, medicines, testing facilities, and 24x7 emergency services."
+      title: "Police Reforms and Respect for Human Rights",
+      desc: "<ul> <li> Mandatory Empathy Training for all police officers to ensure humane behavior with citizens.</li> <li> Regular training on Police Morale, Ethics, and Constitutional Values to strengthen public trust. </li> <li> The duty of police is service, not fear; trust, not atrocities. </li> </ul>"
     },
     d3: {
-      title: "Roads, Electricity, Water, and Internet to Every Village",
-      desc: "Basic facilities reach every citizen so everyone gets an equal opportunity for development."
+      title: "Right to Information, Transparency, and Accountability for Every Penny",
+      desc: "<ul> <li> Account for every single penny of the public. </li> <li> Make expenditure details public at the village, panchayat, and block levels. </li> <li> A common citizen should easily understand how much money came and where it was spent. </li> <li> Create a public 'Janta Dashboard' for every block and panchayat. </li> <li> Provide info on all development works, tenders, and payments in simple language.</li> <li> Transparency should be so absolute that citizens don't even need to file an RTI. </li> <li> Mandatory Social Audits.</li> <li> Swift action against corruption and misuse of funds. </li> </ul>"
     },
     d4: {
-      title: "Corruption-Free & Accountable Governance",
-      desc: "Transparency in government work, accountability of officials, and strict action on corruption."
+      title: "Quality Government Schools in Every Panchayat/Block",
+      desc: "<ul> <li>Modern government schools in every panchayat.</li> <li> Regular appointment of qualified teachers. </li> <li> Digital education and library facilities. </li> <li> Equal right to education for poor children. </li> <li> Promotion of sports, science, and technical education. </li></ul>"
     },
     d5: {
-      title: "Employment and Skill Development for Youth",
-      desc: "Employment opportunities at the local level, promoting startups, and establishing skill development centers."
+      title: "Modern Government Hospitals in Every Block",
+      desc: "<ul> <li> Availability of specialized doctors.</li> <li> 24×7 emergency services. </li> <li> Cheap and free medicines. </li> <li> Maternal and child health facilities. </li> <li> Modern testing equipment and ambulance services. </li> </ul>"
     },
     d6: {
-      title: "Police Reforms and Respect for Human Rights",
-      desc: "Make the police system sensitive, transparent, and accountable to the public; stop police atrocities."
+      title: "Roads, Electricity, and Water to Every Village",
+      desc: "<ul> <li> Connect all villages with paved roads.</li> <li> Availability of clean drinking water. </li> <li> Uninterrupted power supply. </li> <li> Expansion of internet and digital services. </li> <li> Equal development of infrastructure. </li> </ul>"
     },
     d7: {
-      title: "Fair Prices and Support for Farmers",
-      desc: "Fair price for crops, irrigation, seeds, fertilizers, and timely transparent government support."
+      title: "Corruption-Free and Accountable Governance",
+      desc: "<ul> <li> Swift action in corruption cases.</li> <li> Fix accountability of officials. </li> <li> Set time limits for government work. </li> <li> Strict punishment for bribery. </li> <li> Transparent administrative system. </li> </ul>"
     },
     d8: {
-      title: "Right to Information & Government Transparency",
-      desc: "Information of every government scheme, expense, and decision should be accessible, and RTI should be effective."
+      title: "Employment and Skill Development for Youth",
+      desc: "<ul> <li> Employment opportunities at the local level.</li> <li> Skill development training centers. </li> <li> Promotion of industries and investment. </li> <li> Assistance for self-employment. </li> <li> Policy to stop the migration of youth. </li> </ul>"
     },
     d9: {
-      title: "Safety and Respect for Women",
-      desc: "Swift action against crimes against women, safe public spaces, helplines, and fast-track justice."
+      title: "Fair Prices and Support for Farmers",
+      desc: "<ul> <li> Fair minimum support price for crops.</li> <li> Irrigation and seed facilities. </li> <li> Timely government assistance. </li> <li> Fair compensation in natural disasters. </li> <li> Promotion of agro-based industries. </li> </ul>"
     },
     d10: {
-      title: "Constitutional Guarantee for Rehabilitation & Disaster Relief",
-      desc: "No one's home should be demolished without rehabilitation, and in disasters (floods), every affected family must get essential facilities."
+      title: "Rights of Weaker Sections and Social Justice",
+      desc: "<ul> <li> Protection of rights of Dalits, backward classes, tribals, minorities, and all weaker sections.</li> <li> Ensure equal opportunities. </li> <li> Strict action against social discrimination. </li> </ul>"
     },
     d11: {
-      title: "Rights of Weaker Sections & Social Justice",
-      desc: "Protection of rights and equal opportunities for Dalits, backward classes, tribals, minorities, and all weaker sections."
+      title: "Constitutional Guarantee for Rehabilitation and Disaster Relief",
+      desc: "No one's home should be demolished without rehabilitation, and in disasters (floods), every affected family must get essential facilities for a dignified life."
     }
   },
   detailedDemand: {
-    title: "10. Constitutional Guarantee for Rehabilitation & Disaster Relief – In Detail",
+    title: "Constitutional Guarantee for Rehabilitation & Disaster Relief – In Detail",
     c1: {
       title: "Rehabilitation First, Action Later",
       i1: "No citizen's home, shop, or land should be demolished without rehabilitation.",
@@ -143,7 +143,7 @@ export const en = {
     mobile: "Mobile Number",
     city: "City / District",
     occupation: "Occupation",
-    remarks: "Remarks / Opinion",
+    remarks: "How can you contribute?",
     placeholder: "Your answer",
     submit: "Submit",
     submitting: "Submitting...",
