@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1%;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-bg);
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.logoPlaceholder {
+  font-size: 1.2rem;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoText h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.logoText p {
+  font-size: 0.8rem;
+  color: var(--primary-red);
+  margin: 0;
+  font-weight: 600;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLinks a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navLinks a:hover {
+  color: var(--primary-red);
+}
+
+.navLinks a.active {
+  color: var(--primary-red);
+}
+
+.ctaContainer {
+  display: flex;
+}
+
+.ctaButton {
+  background-color: var(--primary-red);
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.ctaButton:hover {
+  background-color: var(--primary-red-hover);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1024px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoText h1 {
+    font-size: 1rem;
+  }
+  
+  .logoText p {
+    font-size: 0.7rem;
+  }
+  
+  .ctaButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}

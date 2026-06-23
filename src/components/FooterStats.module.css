@@ -1,0 +1,140 @@
+.footer {
+  background-color: #050505;
+  color: var(--text-light);
+  padding: 1.5rem 2%;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.statItem:first-child {
+  padding-left: 0;
+}
+
+.icon {
+  color: #ffb703;
+  width: 32px;
+  height: 32px;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.statNumber {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 2rem;
+  /* Left border is not strictly needed if the last statItem has a right border, 
+     but let's keep it clean by adjusting padding. */
+}
+
+.socialLabel {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .stats {
+    justify-content: center;
+  }
+  .socialMedia {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+  .statItem:last-child {
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .statItem {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    border-right: none;
+    gap: 0.5rem;
+  }
+  
+  .statInfo {
+    align-items: center;
+  }
+  
+  .socialMedia {
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}

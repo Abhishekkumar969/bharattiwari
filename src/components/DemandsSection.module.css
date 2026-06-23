@@ -1,0 +1,291 @@
+.demandsSection {
+  padding: 4rem 1%;
+  background-color: var(--light-bg);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.line {
+  height: 2px;
+  background-color: var(--primary-red);
+  flex: 1;
+  max-width: 100px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.iconContainer {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #fce7f3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.iconGreen {
+  background-color: #10b981;
+}
+
+.iconRed {
+  background-color: #ef4444;
+}
+
+.iconBlue {
+  background-color: #3b82f6;
+}
+
+.iconOrange {
+  background-color: #f59e0b;
+}
+
+.iconPurple {
+  background-color: #8b5cf6;
+}
+
+.iconIndigo {
+  background-color: #1e40af;
+}
+
+.iconTeal {
+  background-color: #14b8a6;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chevronContainer {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.cardBody {
+  margin-top: 1rem;
+  display: none;
+}
+
+.cardBody.expanded {
+  display: block;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  flex: 1;
+  margin: 0;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Card 10 specific styles */
+.highlightedCard {
+  background-color: #1e3a5f;
+  color: white;
+  border: none;
+  grid-column: span 2;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.highlightedHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.highlightedBody {
+  margin-top: 1rem;
+}
+
+.highlightedIconWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconCircle {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.numberBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #fbbf24;
+  color: #1e3a5f;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.highlightedTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  flex: 1;
+}
+
+.highlightedDesc {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.hideOnMobile {
+  display: none;
+}
+
+.showOnMobile {
+  display: block;
+}
+
+.expandWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+.expandBtn {
+  background: none;
+  border: none;
+  color: #fbbf24;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s ease;
+  background-color: #0285c748;
+  padding: 0rem 2rem;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.expandBtn:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 769px) {
+  .alwaysOpenDesktop {
+    display: block !important;
+  }
+
+  .hideChevronDesktop {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlightedCard {
+    grid-column: span 2;
+  }
+
+  .orderCard9 {
+    order: 1;
+  }
+
+  .orderCard11 {
+    order: 2;
+  }
+
+  .orderCard10 {
+    order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlightedCard {
+    grid-column: span 1;
+  }
+
+  .highlightedHeader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
