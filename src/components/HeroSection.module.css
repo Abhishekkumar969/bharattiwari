@@ -290,9 +290,7 @@
 }
 
 @media (max-width: 768px) {
-  .heroSection {
-    padding: 60px 1% 1rem 1%;
-  }
+ 
 
   .preTitle {
     font-size: 2rem;
