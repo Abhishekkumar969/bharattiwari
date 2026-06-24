@@ -11,8 +11,8 @@
   --text-light: #ffffff;
   --border-color: #e5e7eb;
   
-  --background: var(--light-bg);
-  --foreground: var(--text-main);
+  --background: var(--dark-bg);
+  --foreground: var(--text-light);
 }
 
 html {

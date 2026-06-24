@@ -19,7 +19,7 @@ const TwitterIcon = () => (
 );
 
 const InstagramIcon = () => (
-  <svg viewBox="0 0 24 24" width="24" height="24">
+  <svg viewBox="0 0 24 24" width="40" height="40">
     <defs>
       <linearGradient id="igGradient" x1="0%" y1="100%" x2="100%" y2="0%">
         <stop offset="0%" stopColor="#f09433" />
@@ -129,6 +129,16 @@ export default function FooterStats() {
               <InstagramIcon />
             </a>
           </div>
+        </div>
+      </div>
+      
+      <div className={styles.credits}>
+        <div className={styles.creditItem}>
+          Managed by <a href="https://www.instagram.com/democraticyouth.in" target="_blank" rel="noopener noreferrer" className={styles.creditLink}>democraticyouth.in</a>
+        </div>
+        <span className={styles.separator}> | </span>
+        <div className={styles.creditItem}>
+          Designed by <a href="https://www.devservicetech.com" target="_blank" rel="noopener noreferrer" className={styles.creditLink}>devservicetech.com</a>
         </div>
       </div>
     </footer>

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description: "Anyay ke khilaf awaz uthayein. Hamari maangein padhein aur jan samarthan dein.",
   icons: {
     icon: "/images/bharattiwarijustice.png",
+    apple: "/images/bharattiwarijustice.png",
   },
 };
 

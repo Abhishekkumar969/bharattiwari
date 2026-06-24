@@ -1,5 +1,5 @@
 .ctaSection {
-  background-color: #0a0604;
+  background-color: #020101;
   color: var(--text-light);
   padding: 1rem 1%;
 }
@@ -24,6 +24,7 @@
   object-fit: contain;
   opacity: 0.9;
   border-radius: 8px;
+  clip-path: inset(2px round 8px);
   /* Optional for a cleaner look */
 }
 
@@ -73,9 +74,9 @@
     text-align: center;
     gap: 1.5rem;
     padding: 2rem 1rem;
-    background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 100%);
+    background: #020101;
     border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.02);
   }
 
   .fistGraphic {

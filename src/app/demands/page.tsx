@@ -7,10 +7,8 @@ export default function DemandsPage() {
   return (
     <main>
       <Navbar />
-      <div style={{ paddingTop: '80px' }}>
-        <DemandsSection />
-        <DetailedDemand />
-      </div>
+      <DemandsSection />
+      <DetailedDemand />
       <FooterStats />
     </main>
   );

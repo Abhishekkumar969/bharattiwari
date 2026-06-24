@@ -6,9 +6,7 @@ export default function About() {
   return (
     <main>
       <Navbar />
-      <div style={{ paddingTop: '80px' }}>
-        <AboutSection />
-      </div>
+      <AboutSection />
       <FooterStats />
     </main>
   );

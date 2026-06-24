@@ -2,6 +2,7 @@
 
 import styles from './HeroSection.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 import SupportButton from './SupportButton';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -32,6 +33,12 @@ const RespectIcon = () => (
 const JusticeIcon = () => (
   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffb703" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /><path d="M7 21h10" /><path d="M12 3v18" /><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /></svg>
 );
+const EyeIcon = () => (
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffb703" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg>
+);
+const CheckCircleIcon = () => (
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffb703" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
+);
 
 export default function HeroSection() {
   const { t } = useLanguage();
@@ -44,6 +51,7 @@ export default function HeroSection() {
               src="/images/bharattiwariji.png"
               alt="Bharat Tiwari"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className={styles.heroImage}
               priority
             />
@@ -63,48 +71,64 @@ export default function HeroSection() {
           </p>
 
           <div className={styles.actionButtons}>
-            <button className={`${styles.btn} ${styles.btnPrimary}`}>
-              <FistIcon /> {t('hero.readDemands')}
-            </button>
-            <SupportButton className={`${styles.btn} ${styles.btnSecondary}`} style={{ textDecoration: 'none' }}>
+            <SupportButton className={`${styles.btn} ${styles.btnPrimary}`} style={{ textDecoration: 'none' }}>
               <DocIcon /> {t('hero.support')}
             </SupportButton>
+            <Link href="/demands" className={`${styles.btn} ${styles.btnSecondary}`} style={{ textDecoration: 'none' }}>
+              <FistIcon /> {t('hero.readDemands')}
+            </Link>
           </div>
 
           <div className={styles.statsRow}>
-            <div className={styles.statItem}>
-              <div className={styles.statIconWrapper}><EduIcon /></div>
-              <div>
-                <p className={styles.statTitle}>{t('hero.education')}</p>
-                <p className={styles.statSub}>{t('hero.eduSub')}</p>
+            <div className={styles.statsGridTop}>
+              <div className={styles.statItem}>
+                <div className={styles.statIconWrapper}><EduIcon /></div>
+                <div>
+                  <p className={styles.statTitle}>{t('hero.education')}</p>
+                  <p className={styles.statSub}>{t('hero.eduSub')}</p>
+                </div>
+              </div>
+              <div className={styles.statItem}>
+                <div className={styles.statIconWrapper}><HealthIcon /></div>
+                <div>
+                  <p className={styles.statTitle}>{t('hero.health')}</p>
+                  <p className={styles.statSub}>{t('hero.healthSub')}</p>
+                </div>
+              </div>
+              <div className={styles.statItem}>
+                <div className={styles.statIconWrapper}><ShieldIcon /></div>
+                <div>
+                  <p className={styles.statTitle}>{t('hero.security')}</p>
+                  <p className={styles.statSub}>{t('hero.secSub')}</p>
+                </div>
+              </div>
+              <div className={styles.statItem}>
+                <div className={styles.statIconWrapper}><RespectIcon /></div>
+                <div>
+                  <p className={styles.statTitle}>{t('hero.respect')}</p>
+                  <p className={styles.statSub}>{t('hero.respectSub')}</p>
+                </div>
+              </div>
+              <div className={styles.statItem}>
+                <div className={styles.statIconWrapper}><JusticeIcon /></div>
+                <div>
+                  <p className={styles.statTitle}>{t('hero.justice')}</p>
+                  <p className={styles.statSub}>{t('hero.justiceSub')}</p>
+                </div>
+              </div>
+              <div className={styles.statItem}>
+                <div className={styles.statIconWrapper}><EyeIcon /></div>
+                <div>
+                  <p className={styles.statTitle}>{t('hero.transparency')}</p>
+                  <p className={styles.statSub}>{t('hero.transSub')}</p>
+                </div>
               </div>
             </div>
-            <div className={styles.statItem}>
-              <div className={styles.statIconWrapper}><HealthIcon /></div>
+            <div className={styles.statItemFull}>
+              <div className={styles.statIconWrapper}><CheckCircleIcon /></div>
               <div>
-                <p className={styles.statTitle}>{t('hero.health')}</p>
-                <p className={styles.statSub}>{t('hero.healthSub')}</p>
-              </div>
-            </div>
-            <div className={styles.statItem}>
-              <div className={styles.statIconWrapper}><ShieldIcon /></div>
-              <div>
-                <p className={styles.statTitle}>{t('hero.security')}</p>
-                <p className={styles.statSub}>{t('hero.secSub')}</p>
-              </div>
-            </div>
-            <div className={styles.statItem}>
-              <div className={styles.statIconWrapper}><RespectIcon /></div>
-              <div>
-                <p className={styles.statTitle}>{t('hero.respect')}</p>
-                <p className={styles.statSub}>{t('hero.respectSub')}</p>
-              </div>
-            </div>
-            <div className={styles.statItem}>
-              <div className={styles.statIconWrapper}><JusticeIcon /></div>
-              <div>
-                <p className={styles.statTitle}>{t('hero.justice')}</p>
-                <p className={styles.statSub}>{t('hero.justiceSub')}</p>
+                <p className={styles.statTitle}>{t('hero.promises')}</p>
+                <p className={styles.statSub}>{t('hero.promisesSub')}</p>
               </div>
             </div>
           </div>

@@ -11,14 +11,16 @@ export default function CallToAction() {
     <section className={styles.ctaSection}>
       <div className={styles.container}>
         <div className={styles.fistGraphic}>
-          <Image
-            src="/images/bharattiwarilogo.jpeg"
-            alt="Bharat Tiwari Logo"
-            width={150}
-            height={150}
-            className={styles.fist}
-            style={{ objectFit: 'contain', width: 'auto' }}
-          />
+          <a href="https://www.instagram.com/democraticyouth.in" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/images/TDY Logo New-06.jpeg"
+              alt="Bharat Tiwari Logo"
+              width={150}
+              height={150}
+              className={styles.fist}
+              style={{ objectFit: 'contain', width: 'auto' }}
+            />
+          </a>
         </div>
 
         <div className={styles.content}>

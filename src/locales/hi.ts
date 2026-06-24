@@ -24,7 +24,11 @@ export const hi = {
     respect: "सम्मान",
     respectSub: "हर इंसान का अधिकार",
     justice: "न्याय",
-    justiceSub: "हर पीड़ित का अधिकार"
+    justiceSub: "हर पीड़ित का अधिकार",
+    transparency: "पारदर्शिता",
+    transSub: "पारदर्शी सरकारी काम और फंड",
+    promises: "वादे पूरे करो",
+    promisesSub: "नेता जो वादा करें, पद संभालते ही पहले दिन से उसे पूरा करें"
   },
   about: {
     title: "भरत तिवारी कौन थे?",

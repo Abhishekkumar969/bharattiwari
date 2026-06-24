@@ -24,7 +24,11 @@ export const hin = {
     respect: "Samman",
     respectSub: "Har insaan ka adhikar",
     justice: "Nyay",
-    justiceSub: "Har peedit ka adhikar"
+    justiceSub: "Har peedit ka adhikar",
+    transparency: "Pardarshita",
+    transSub: "Pardarshi sarkari kaam aur fund",
+    promises: "Vaade Pure Karo",
+    promisesSub: "Neta jo vaada karein, pad sambhalte hi pehle din se use pura karein"
   },
   about: {
     title: "Bharat Tiwari Kaun The?",

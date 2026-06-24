@@ -24,7 +24,11 @@ export const bho = {
     respect: "सम्मान",
     respectSub: "हर इंसान के अधिकार",
     justice: "न्याय",
-    justiceSub: "हर पीड़ित के अधिकार"
+    justiceSub: "हर पीड़ित के अधिकार",
+    transparency: "पारदर्शिता",
+    transSub: "पारदर्शी सरकारी काम आ फंड",
+    promises: "वादा पूरा करअ",
+    promisesSub: "नेता जे वादा करस, कुर्सी प बईठते पहिला दिन से ओकरा के पूरा करस"
   },
   about: {
     title: "भरत तिवारी के रहन?",

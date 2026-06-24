@@ -24,7 +24,11 @@ export const en = {
     respect: "Respect",
     respectSub: "Every human's right",
     justice: "Justice",
-    justiceSub: "Every victim's right"
+    justiceSub: "Every victim's right",
+    transparency: "Transparency",
+    transSub: "Transparent govt work and funds",
+    promises: "Fulfill Promises",
+    promisesSub: "Leaders must fulfill their promises from day 1 in office"
   },
   about: {
     title: "Who was Bharat Tiwari?",
