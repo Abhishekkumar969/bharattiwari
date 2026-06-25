@@ -131,16 +131,7 @@ export default function FooterStats() {
           </div>
         </div>
       </div>
-      
-      <div className={styles.credits}>
-        <div className={styles.creditItem}>
-          Managed by <a href="https://www.instagram.com/democraticyouth.in" target="_blank" rel="noopener noreferrer" className={styles.creditLink}>democraticyouth.in</a>
-        </div>
-        <span className={styles.separator}> | </span>
-        <div className={styles.creditItem}>
-          Designed by <a href="https://www.devservicetech.com" target="_blank" rel="noopener noreferrer" className={styles.creditLink}>devservicetech.com</a>
-        </div>
-      </div>
+
     </footer>
   );
 }
